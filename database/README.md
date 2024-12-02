@@ -25,3 +25,20 @@ pnpm tsx /handlers/create-index.ts
 ```bash
 pnpm tsx /handlers/upsert-vectors.ts
 ```
+
+5. Check pinecone is eventually consistent
+
+```bash
+pnpm tsx /handlers/describe-index-stats.ts
+```
+
+It should look like:
+
+```
+{
+  namespaces: { example-namespace: { recordCount: 6 } },
+  dimension: 1024,
+  indexFullness: 0.00008,
+  totalRecordCount: 6
+}
+```
