@@ -42,3 +42,15 @@ It should look like:
   totalRecordCount: 6
 }
 ```
+
+6. Search index
+
+```bash
+pnpm tsx /handlers/search-index.ts
+```
+
+7. Clean up & delete index
+
+```bash
+pnpm tsx /handlers/delete-index.ts
+```

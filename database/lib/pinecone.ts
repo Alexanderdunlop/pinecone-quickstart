@@ -8,3 +8,5 @@ export const pc = new Pinecone({ apiKey: process.env.PINECONE_API_KEY });
 export const indexName = "example-index";
 
 export const model = "multilingual-e5-large";
+
+export const index = pc.index(indexName);
